@@ -1,0 +1,178 @@
+*{
+    outline: red 1px solid;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*CABEÇALHO*/
+
+header {
+    background-color: #fff;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #00171F;
+    border: 1px solid 	#007acc;
+}
+
+#cabecalho .nav .nav-link.active:hover {
+    background-color: #007acc;
+}
+
+/*CABEÇALHO-end*/
+
+/*SOBRE*/
+
+#sobre h3 {
+    padding-top: 15vh;
+    padding-bottom: 2%;
+}
+
+#sobre p {
+    font-size: 25px;
+    padding-left: 2%;
+}
+
+/*SOBRE-end*/
+
+/*PRODUTOS*/
+
+#produtos h3 {
+    padding-top: 15vh;
+    padding-bottom: 2%;
+}
+
+#produtos h5 {
+    padding-top: 1vh;
+}
+
+#produtos ul li {
+    list-style: none;
+}
+
+#produtos ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#produtos ul li {
+    width: 30%;
+}
+
+#produtos ul p {
+    width: 90%;
+}
+
+#produtos img {
+    width: 20.470829068577277vh;
+    height: 20.470829068577277vh;
+}
+/*PRODUTOS-end*/
+
+/*USADOS*/
+
+#usados h3 {
+    padding-top: 15vh;
+    padding-bottom: 2%;
+}
+
+#usados ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+#iphone p {
+    height: 23%;
+}
+
+#samsung {
+    width: 100%;
+}
+
+/*USADOS-end*/
+
+/*CONTATO*/
+
+.entre-em-contato {
+    padding-top: 15vh;
+    padding-bottom: 2%;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+/*CONTATO-end*/
+
+/*MOBILE*/
+
+@media screen and (max-width: 767px) {
+
+    #produtos ul {
+        display: grid;    
+    }
+
+    #produtos img {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    #produtos li p,
+    #produtos li h5,
+    #produtos li footer {
+        width: 40vh;
+    }
+
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width:1023px ) {
+
+    #produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        clear: both;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
