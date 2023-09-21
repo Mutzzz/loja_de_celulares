@@ -1,5 +1,5 @@
 *{
-    outline: red 1px solid;
+    outline: 1px red solid;
 }
 
 body {
@@ -36,13 +36,17 @@ header h1 {
 
 /*SOBRE*/
 
+#sobre .imagem-sobre {
+    display: flex;
+}
+
 #sobre h3 {
     padding-top: 15vh;
     padding-bottom: 2%;
 }
 
 #sobre p {
-    font-size: 25px;
+    font-size: 2.5vh;
     padding-left: 2%;
 }
 
@@ -134,14 +138,48 @@ header h1 {
     }
 
     #produtos img {
-        width: 40vh;
-        height: 40vh;
+        width: 50vh;
+        height: 50vh;
     }
 
-    #produtos li p,
-    #produtos li h5,
-    #produtos li footer {
-        width: 40vh;
+    #produtos ul li img {
+        padding-top: 3%;
+    }
+
+    #iphone p {
+        height: 72px;
+    }
+
+    #produtos ul li p,
+    #produtos ul li h5,
+    #produtos ul li footer {
+        width: 50vh;
+    }
+
+    #produtos ul li {
+        width: 100%;
+    }
+
+    #produtos ul p {
+        width: 30%;
+    }
+
+    #sobre img {
+        width: 100%;
+        height: 50%;
+    }
+
+    #sobre .imagem-sobre {
+        display: block;
+    }
+
+    #sobre .imagem-sobre p {
+        padding-top: 2%;
+        padding-left: 0;
+    }
+
+    #usados p {
+        
     }
 
 }
@@ -150,11 +188,18 @@ header h1 {
 
 @media screen and (min-width: 768px) and (max-width:1023px ) {
 
-    #produtos ul {
-        display: grid;
-        grid-template-columns: repeat(2, 49%);
-        clear: both;
+    .container {
+        max-width: 90%;
     }
+
+    #sobre .imagem-sobre {
+        display: block;
+    }
+
+    #sobre .imagem-sobre img {
+        width: 100%;
+    }
+
 
 }
 
