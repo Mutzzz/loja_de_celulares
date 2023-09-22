@@ -1,6 +1,4 @@
-*{
-    outline: 1px red solid;
-}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -150,10 +148,13 @@ header h1 {
         height: 72px;
     }
 
-    #produtos ul li p,
     #produtos ul li h5,
     #produtos ul li footer {
         width: 50vh;
+    }
+
+    #produtos ul li p {
+        width: 80%;
     }
 
     #produtos ul li {
@@ -182,6 +183,9 @@ header h1 {
         
     }
 
+    body {
+        overflow-x: hidden;
+    }
 }
 
 /*Tablet*/
@@ -198,6 +202,23 @@ header h1 {
 
     #sobre .imagem-sobre img {
         width: 100%;
+    }
+
+    #produtos img {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    #produtos ul p {
+        height: 28%;
+    }
+
+    #iphone p {
+        height: 28%;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
 
